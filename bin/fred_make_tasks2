@@ -93,7 +93,7 @@ EOF
     $cmd .= " -M $multiple_cpus";
   }
   else {
-    #$cmd .= " -m $m";
+    $cmd .= " -m $m";
   }
   if ($threads > 0) {
     $cmd .= " -t $threads";
