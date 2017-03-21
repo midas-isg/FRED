@@ -96,7 +96,7 @@ if ($parallel) {
   }
 }
 
-if ($cores) {
+if ($cores > 1) {
   $parallel = 1;
   $using_pbs = 0;
   $cpus = $cores;
