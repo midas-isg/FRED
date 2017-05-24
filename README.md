@@ -1,11 +1,14 @@
-##FRED 
-###A Framework for Reconstructing Epidemiological Dynamics
+## FRED ##
+### A Framework for Reconstructing Epidemiological Dynamics ###
 An open source modeling system developed by the University of Pittsburgh [Public Health Dynamics Laboratory](http://www.phdl.pitt.edu "PHDL website") in collaboration with the [Pittsburgh Supercomputing Center](http://www.psc.edu "PSC website") and the [Carnegie Mellon University School of Computer Science](http://www.cs.cmu.edu "CMU CS website").
 
-####Version information
+#### Version information ####
 This is the Master branch of FRED for Cygwin on Windows. It should only be updated after a Development branch is ready to be declared Stable.
 
-####Notes on compiling
+#### Notes on Windows Git client ####
+Carriage returns are inserted before newlines in Windows OS, but this can cause problems for FRED when processing input files. Since the Windows Git client has the option to commit CRLF line endings it is wise to turn this feature off. Please see [https://help.github.com/articles/dealing-with-line-endings/](https://help.github.com/articles/dealing-with-line-endings/) for more information on how to change the client's settings.
+
+#### Notes on compiling ####
 By default FRED tried to use the clang compiler (newer versions of XCode for Mac will have this). Since the Cygwin compiler is not clang, this section of FRED/src/Makefile has been commented out.
 
 ```
